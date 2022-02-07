@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.topnav{
+    overflow: hidden;
+    background-color: rgb(126, 77, 77);
+
+}
+
+.topnav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: rgb(105, 196, 238);
+    color: black;
+}
+
+.header{
+    background-color: white;
+    color: rgb(67, 67, 226);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.openbutton{
+    
+    color: black;
+    padding: 3vh 3vw;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+
+}
+.form-popup{
+    display: none;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    z-index: 9;
+
+}
+
+.form-cantainer{
+    max-width: 35vw;
+    padding: 2vh 2vw;
+    background-image: linear-gradient(rgb(123, 238, 123), rgb(224, 152, 221));
+    height: 50vh;
+    width: 25vw;
+    margin-left: 35vw;
+    margin-top: 5vh;
+    border: 2px solid red;
+    box-shadow: black;
+    font-size: 1.5vw;
+}
+
+.form-cantainer .btn{
+    background-color: green;
+    color: white;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    height: 3vh;
+    text-align: center;
+    width: 4vw;
+    font-size: 1vw;
+}
+
+.form-cantainer .btncancel{
+    background-color: rgba(233, 15, 44, 0.911);
+    border-radius: 0.5vw;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    height: 3vh;
+    width: 4vw;
+    font-size: 1vw;
+}
+.fbox{
+    width: 15vw;
+    height: 2vh;
+    font-size: 1vw;
+    
+}
+
+

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BA College of engg & tech</title>
+</head>
+
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+}
+
+
+.topnav{
+    overflow: hidden;
+    background-color: rgb(126, 77, 77);
+
+}
+
+.topnav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: rgb(105, 196, 238);
+    color: black;
+}
+
+.header{
+    background-color: white;
+    color: rgb(67, 67, 226);
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.form-cantainer{
+    max-width: 35vw;
+    padding: 2vh 2vw;
+    background-image: linear-gradient(rgb(123, 238, 123), rgb(224, 152, 221));
+    height: 50vh;
+    width: 25vw;
+    margin-left: 35vw;
+    margin-top: 5vh;
+    border: 2px solid red;
+    box-shadow: black;
+    font-size: 1.5vw;
+}
+
+.form-cantainer .btn{
+    background-color: green;
+    color: white;
+    border-radius: 0.5vw;
+    cursor: pointer;
+    height: 3vh;
+    text-align: center;
+    width: 4vw;
+    font-size: 1vw;
+}
+
+.form-cantainer .btncancel{
+    background-color: rgba(233, 15, 44, 0.911);
+    border-radius: 0.5vw;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    height: 3vh;
+    width: 4vw;
+    font-size: 1vw;
+}
+.fbox{
+    width: 15vw;
+    height: 2vh;
+    font-size: 1vw;
+    
+}
+.fcreate{
+    background-image: linear-gradient(red, green);
+}
+
+
+</style>
+<body>
+    <div>
+        <div class="header">
+            <h3 class="clgname">BA COLLEGE OF ENGINEERING AND TECHNOLOGY NEW BOYS HOSTEL</h3>
+            <h4 class="clgadd">GHUTIYA, JAMSHEDPUR, EAST-SINGHBHUM (822304)</h4>
+            <h4 class="clgdetail">Approved by AICET, GOV. OF JHARKHAND,  & Jharkhand University of technology</h4>
+        </div>
+
+        
+
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a href="#read">Read</a>
+            <a href="#update">Update</a>
+            <a href="#delete">Delete</a>
+            <a href="create.html">Create</a>
+            
+        </div>
+        
+    </div>
+    <div id="myForm">
+        <form action = "create.php" method = "post" class="form-cantainer">
+            <h2>Room Allotment Form</h2>
+
+            <label for="student_name"><b>Student Name</b></label><br>
+            <input class="fbox" id="sname" type="text" placeholder="Enter Student name" name="student_name"  required><br><br>
+
+            <label for="room_number"><b>Room Number</b></label><br>
+            <input class="fbox" id="roomn" type="number" placeholder="Room Number" name="room_number" required><br><br>
+
+            
+            <label for="Address"><b>Address</b></label><br>
+            <input class="fbox" id="address" type="text" placeholder="Address" name="address" required><br><br>
+
+            <label for="phn"><b>Phone Number</b></label><br>
+            <input class="fbox" id="phn" type="number" placeholder="phone number" name="phno" required><br><br>
+
+            <button type="submit" class="btn" onclick="submit_data()">Submit</button>
+            <button type="button" class="btncancel" onclick="closeForm()">Close</button>
+
+        </form>
+
+   </div>
+   <!-- <script>
+   
+
+    function submit_data(){
+        var name = document.getElementById('sname').value;
+        var room = document.getElementById('roomn').value;
+        var phone = document.getElementById('phn').value;
+
+        if(name === '' || room === '' || phone === ''){
+            alert('Please fill all the fields!');
+            return false;
+
+        }else{
+            alert('Successfully alloted the Room!')
+
+        }
+    }
+</script> -->
+     
+    
+</body>
+</html>

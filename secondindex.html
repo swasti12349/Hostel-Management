@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BACET</title>
+
+    <link rel="stylesheet" href="sec.css">
+</head>
+<body>
+    <div>
+        
+        <div class="header">
+            <div class="logo">
+                <img src="logo.png" alt="" style="height: 15vh; width: 7vw; float: left; margin-left: 4vw;">
+            </div>
+            <h3 class="clgname">BA COLLEGE OF ENGINEERING AND TECHNOLOGY NEW BOYS HOSTEL</h3>
+            <h4 class="clgadd">GHUTIYA, JAMSHEDPUR, EAST-SINGHBHUM (822304)</h4>
+            <h4 class="clgdetail">Approved by AICTE, GOV. OF JHARKHAND,  & Jharkhand University of technology</h4>
+        </div>
+        <div class="read">
+            <a href="#read"><h2 class="menu">READ</h2></a>
+        </div>
+        <div class="update">
+            <a href="#update"><h2 class="menu">UPDATE</h2></a>
+        </div>
+        <div class="create">
+            <a href="#create"><h2 class="menu">CREATE</h2></a>
+        </div>
+        <div class="delete">
+            <a href="#delete"><h2 class="menu">DELETE</h2></a>
+        </div>
+        <div class="content">
+            <h3 style="margin-left: 0.5vw;">Warden of the Hostel</h3>
+            <p style="margin-left: 0.5vw;">Mr. Arshalan Noor</p><br>
+            <h3 style="margin-left: 0.5vw;">Member of Hostel Management</h3>
+            <ol>
+                <li>Md. Amjad Hussain</li>
+                <li>Avinash Kumar Paswan</li>
+                <li>Anant Bera</li>
+                <li>Naman Mandal</li>
+                <li>Amit Khalkho</li>
+            </ol>
+
+        </div>
+       
+        <div class="image">
+
+                <img src="1.JPG" style="width: 100%;" class="mySlides">
+                <img src="2.JPG" style="width: 100%;" class="mySlides">
+                <img src="3.JPG" style="width: 100%;" class="mySlides">
+                <img src="4.JPG" style="width: 100%;" class="mySlides">
+                <img src="5.JPG" style="width: 100%;" class="mySlides">
+            
+               </div>
+                <br>
+            
+    </div>
+   
+    <div class="cntnt">
+        <h3 style="margin-left: 0.5vw;">Hostel</h3>
+        <p style="margin-left: 0.5vw;">
+            There is one hostel building for boys and one hostel for girls
+            in college campus. The rooms are good, sanitized and equipped with 
+            all basic amenities. All the hostels have separate messes 
+            which provide healthy and nutritious food.
+            There is a separate canteen for all those who do not reside in hostels.
+        </p>
+        <h4 style="margin-left: 0.5vw;">Hostel charges:-</h4>
+        <p style="margin-left: 0.5vw;">
+            These charges are applicable only for those students
+            who want to take Hostel facility and these charges are
+             calculated on the basis of academic session.
+             and the charges are <b>7,500 Rupees</b> per semester <b>+</b>
+              Caution Money is <b>5000 ruppes</b> and the caution money is Refundable.
+        </p>
+    </div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel(){
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+
+            for (i = 0; i < x.length; i++){
+                x[i].style.display = "none";
+            }
+            myIndex++;
+
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex-1].style.display = "block";
+            setTimeout(carousel, 2000);
+        }
+
+    </script>
+
+</body>
+</html>
